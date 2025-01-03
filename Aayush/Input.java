@@ -10,5 +10,6 @@ public class Input {
         int sum = a+b;
         System.out.println("the sum of these number is ");
         System.out.println(sum);
+        sc.close();
     }
 }
