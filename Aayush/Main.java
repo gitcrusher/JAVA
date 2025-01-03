@@ -9,5 +9,7 @@ public class Main {
         double d1 = 4.98d;
         boolean a = true;
         System.out.println(age);
+        String str = "harry helping";
+        System.out.println(str);
     }
 }
