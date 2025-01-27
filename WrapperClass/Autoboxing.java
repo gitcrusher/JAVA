@@ -6,7 +6,7 @@ public class Autoboxing {
         Integer num = sc.nextInt();//wrapper class
         int a = 10 ;
         System.out.println(num);//autoboxing
-        System.out.println(num.intValue());//manual boxing
+        System.out.println(num.intValue());//manual unboxing
         sc.close();
     }
 }
