@@ -4,7 +4,9 @@ public class Autoboxing {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Integer num = sc.nextInt();//wrapper class
-        System.out.println(num.intValue());//
+        int a = 10 ;
+        System.out.println(num);//autoboxing
+        System.out.println(num.intValue());//manual boxing
         sc.close();
     }
 }
