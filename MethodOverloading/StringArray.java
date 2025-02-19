@@ -17,8 +17,7 @@ public class StringArray {
         String charString = new String(chars);
         System.out.println(charString); 
 
-        String x = new String(bytes);
-        String e = new String(chars);
-        System.out.println(x+e);
+        
+        System.out.println(byteString+" "+charString); // Output
     }
 }
