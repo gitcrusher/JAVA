@@ -17,32 +17,34 @@ public class date {
         // Define input date format
         DateTimeFormatter a = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
-        // Parse the user input date
-        LocalDate parsedDate = LocalDate.parse(date, a);
+        
+            // Parse the user input date
+            LocalDate parsedDate = LocalDate.parse(date, a);
 
-        // Subtract 1 month from the parsed date
-        LocalDate updatedDate = parsedDate.minusMonths(1);
+            // Subtract 1 month from the parsed date
+            LocalDate updatedDate = parsedDate.minusMonths(1);
 
-        // Get the month name of the updated date
-        Month month = updatedDate.getMonth();
+            // Get the month name of the updated date
 
-        // Define a new format to display updated date in dd-MMMM-yyyy
-        DateTimeFormatter newFormat = DateTimeFormatter.ofPattern("dd-MMMM-yyyy");
-        String formatString = updatedDate.format(newFormat);
+            // Define a new format to display updated date in dd-MMMM-yyyy
+            DateTimeFormatter newFormat = DateTimeFormatter.ofPattern("dd-MMMM-yyyy");
+            String formatString = updatedDate.format(newFormat);
 
-        // Get the length of the original month
-        int lastDay = parsedDate.lengthOfMonth();
+            // Get the length of the updated month (after subtracting 1 month)
+            int lastDayUpdatedMonth = updatedDate.lengthOfMonth();
 
-        // Get the last day of the original month
-        LocalDate lastDayOfMonth = updatedDate.withDayOfMonth(lastDay);
+            // Get the last day of the updated month
+            LocalDate lastDayOfMonth = updatedDate.withDayOfMonth(lastDayUpdatedMonth);
 
-        // Format the last day of the month to desired format
-        String formattedDate = lastDayOfMonth.format(newFormat);
+            // Format the last day of the month to the desired format
+            String formattedDate = lastDayOfMonth.format(newFormat);
 
-        // Print results
-        System.out.println("Parsed Date: " + parsedDate);
-        System.out.println("Date after subtracting 1 month: " + formatString);
-        System.out.println("Last Day of the Original Month: " + formattedDate);
+            // Print results
+            System.out.println("Parsed Date: " + parsedDate);
+            System.out.println("Date after subtracting 1 month: " + formatString);
+            System.out.println("Last Day of Updated Month: " + formattedDate);
+
+            // System.out.println("Invalid date format. Please use dd-MM-yyyy.");
 
         // Close the scanner
         sc.close();
