@@ -17,7 +17,5 @@ public class arraylistString {
             System.out.println(arr2.get(i));
         }
 
-        // String b = arr2.toUpperCase();
-
 }
 }
