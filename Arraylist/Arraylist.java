@@ -3,7 +3,10 @@ import java.util.*;
 public class Arraylist {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Integer> arr = new ArrayList<>();
+        ArrayList<String> arr = new ArrayList<>();
+        String a=  arr.tostring();
+        String b = a.toUpperCase();
+        
         arr.add(10);
         arr.add(1);
         arr.add(2, 1500);
