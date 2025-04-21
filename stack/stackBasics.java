@@ -36,7 +36,7 @@ public class stackBasics {
 public static void main(String[] args) {
 
         stackBasics queue = new stackBasics();
-        queue.enqueue(10);
+        queue.enqueue(11);
         queue.enqueue(20);
         queue.enqueue(30);
 
