@@ -1,0 +1,1 @@
+System.out.println("Is Empty: " + queue.isEmpty()); // fals
