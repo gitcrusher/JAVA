@@ -23,7 +23,16 @@ public class hashing {
 
         System.out.println("\n--- Student Details ---");
         for (Map.Entry<Integer, String> m : map.entrySet()) {
-            System.out.println("Roll No is: " + m.getKey() + " and Name is: " + m.getValue());
+            int rollout = m.getKey();
+            String namee = m.getValue();
+
+            for(Map.Entry<Integer, String> m1: map.entrySet()){
+                int roll = m1.getKey();
+                String name = m1.getValue();
+                if((namee.equals(name))&&  rollout!= roll){
+                    System.out.println("Students with same Name" + rollout+ " "+ roll);
+                }
+            }
         }
 
         System.out.println("\nComplete HashMap: " + map);
