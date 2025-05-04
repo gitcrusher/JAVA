@@ -12,7 +12,7 @@ public class preorder {
         int a = sc.nextInt();
         sc.nextLine();
         String b = sc.nextLine();
-        tree.add(a+b);
+        tree.add(a+" "+b);
         System.out.println(tree);
     }
 }
